@@ -187,6 +187,9 @@ const ScalewayProvider = "Scaleway"
 // OracleProvider describes the provider Oracle
 const OracleProvider = "Oracle"
 
+// DigitalOceanProvider describes the provider Digital Ocean
+const DigitalOceanProvider = "DigitalOcean"
+
 // OTCProvider describes the provider OTC
 const OTCProvider = "OTC"
 
@@ -210,6 +213,8 @@ func ParseProvider(str string) string {
 		return ScalewayProvider
 	case "oci", "oracle":
 		return OracleProvider
+	case "digitalocean":
+		return DigitalOceanProvider
 	default:
 		return NilProvider
 	}
